@@ -9,31 +9,7 @@ import { toast } from "sonner";
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const formData = new FormData(form);
-    const payload = {
-      name: String(formData.get("name") || ""),
-      email: String(formData.get("email") || ""),
-      subject: String(formData.get("subject") || ""),
-      message: String(formData.get("message") || ""),
-    };
-    fetch("http://localhost:" + (import.meta.env.VITE_EMAIL_SERVER_PORT || 8787) + "/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    })
-      .then(async (r) => {
-        const data = await r.json().catch(() => ({}));
-        if (!r.ok || data.ok === false) {
-          throw new Error(data.error || "Failed to send");
-        }
-        toast.success("Message sent! We'll get back to you soon.");
-        form.reset();
-      })
-      .catch((err) => {
-        toast.error("Could not send message. Please try again later.");
-        console.error(err);
-      });
+    toast.info("Contact form is currently disabled. Please call or email us directly.");
   };
 
   return (
@@ -107,8 +83,8 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full">
-                    Send Message
+                  <Button type="submit" className="w-full" variant="secondary">
+                    Send Message (Disabled)
                   </Button>
                 </form>
               </div>

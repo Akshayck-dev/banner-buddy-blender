@@ -15,6 +15,10 @@ const fromEmail = process.env.FROM_EMAIL || "no-reply@example.com";
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
+app.get("/", (_req, res) => {
+  res.type("text/plain").send("Email server is running. Try GET /health or POST /api/contact.");
+});
+
 app.get("/health", (_req, res) => {
   return res.json({ ok: true });
 });
