@@ -1,3 +1,23 @@
+## Email notifications for Contact page
+
+This project includes a minimal email server to notify the owner when someone submits the Contact form.
+
+### Setup
+1. Create a `.env` file in the project root with:
+```
+RESEND_API_KEY=your_resend_api_key
+OWNER_EMAIL=owner@example.com
+FROM_EMAIL=contact@your-domain.com
+EMAIL_SERVER_PORT=8787
+```
+2. Install deps and run both servers:
+```
+npm install
+npm run server
+npm run dev -- --port 8085 --host
+```
+Visit http://localhost:8085/contact and submit the form.
+
 # Welcome to your Lovable project
 
 ## Project info

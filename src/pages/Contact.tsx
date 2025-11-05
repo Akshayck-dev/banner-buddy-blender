@@ -9,7 +9,31 @@ import { toast } from "sonner";
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Thank you! We'll get back to you soon.");
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const payload = {
+      name: String(formData.get("name") || ""),
+      email: String(formData.get("email") || ""),
+      subject: String(formData.get("subject") || ""),
+      message: String(formData.get("message") || ""),
+    };
+    fetch("http://localhost:" + (import.meta.env.VITE_EMAIL_SERVER_PORT || 8787) + "/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    })
+      .then(async (r) => {
+        const data = await r.json().catch(() => ({}));
+        if (!r.ok || data.ok === false) {
+          throw new Error(data.error || "Failed to send");
+        }
+        toast.success("Message sent! We'll get back to you soon.");
+        form.reset();
+      })
+      .catch((err) => {
+        toast.error("Could not send message. Please try again later.");
+        console.error(err);
+      });
   };
 
   return (
@@ -43,6 +67,7 @@ const Contact = () => {
                     </label>
                     <Input
                       id="name"
+                      name="name"
                       placeholder="Your name"
                       required
                     />
@@ -53,6 +78,7 @@ const Contact = () => {
                     </label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="your@email.com"
                       required
@@ -64,6 +90,7 @@ const Contact = () => {
                     </label>
                     <Input
                       id="subject"
+                      name="subject"
                       placeholder="How can we help?"
                       required
                     />
@@ -74,6 +101,7 @@ const Contact = () => {
                     </label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Your message..."
                       rows={6}
                       required
@@ -102,8 +130,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Healthy Street<br />
-                        Nutrition City, NC 12345
+                        Payyanakal kozhikode 673019
                       </p>
                     </div>
                   </div>
@@ -115,7 +142,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
                       <p className="text-muted-foreground">
-                        +1 (555) 123-4567
+                        +91 72937 46456
                       </p>
                     </div>
                   </div>
@@ -127,7 +154,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <p className="text-muted-foreground">
-                        hello@snackkit.com
+                        sushanthak22@gmail.com
                       </p>
                     </div>
                   </div>

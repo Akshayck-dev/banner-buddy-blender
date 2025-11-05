@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <img src={logo} alt="Snack Kit" className="h-20 w-auto" />
             <p className="text-sm text-muted-foreground">
-              Healthy snacking made simple with 100% natural ingredients.
+              Healthy Snack King Made Simple
             </p>
           </div>
 

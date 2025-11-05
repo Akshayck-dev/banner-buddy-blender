@@ -29,7 +29,7 @@ const Index = () => {
             className="w-64 md:w-80 lg:w-96 mx-auto mb-8 drop-shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-700"
           />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 animate-in fade-in slide-in-from-bottom-5 duration-700 delay-150">
-            Healthy Snacking Made Simple
+            Healthy Snack Kit Made Simple
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">
             Discover our premium selection of natural, delicious snacks that fuel your day
