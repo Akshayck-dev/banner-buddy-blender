@@ -8,13 +8,16 @@ import img3 from "@/assets/3.jpeg";
 import img4 from "@/assets/4.jpeg";
 import img5 from "@/assets/5.jpeg";
 import img6 from "@/assets/6.jpeg";
+import img7 from "@/assets/7.jpeg";
+import img8 from "@/assets/8.jpeg";
+import img9 from "@/assets/9.jpeg";
 
 const Products = () => {
   const products = [
     {
-      name: "വറുത്തകായി (Classic Banana Chips)",
+      name: "പഴുത്ത കായവറുത്തത് (Ripe bananachips)",
       price: "$4.99",
-      description: "വറുത്തകായി എന്നത് വാഴപ്പഴം എണ്ണയിൽ വറുത്ത് തയ്യാറാക്കുന്ന ഒരു ക്രിസ്പിയും രുചികരവുമായ സ്നാക്കാണ്‌.(Varuthakaayi is a crispy and tasty snack made by deep-frying slices of banana in oil.)",
+      description: "പഴുത്ത കായവറുത്തത് എന്നത് വാഴപ്പഴം എണ്ണയിൽ വറുത്ത് തയ്യാറാക്കുന്ന ഒരു ക്രിസ്പിയും രുചികരവുമായ സ്നാക്കാണ്‌.(Varuthakaayi is a crispy and tasty snack made by deep-frying slices of banana in oil.)",
       category: "Best Seller",
       image: img1,
     },
@@ -26,14 +29,14 @@ const Products = () => {
       image: img2,
     },
     {
-      name: "ചെറുമുരുക്ക്(Cheeru Murukku)",
+      name: "തക്കാളിമുറുക്ക്(Cheeru Murukku)",
       price: "$5.49",
-      description: "മസാല ചേർത്ത് പൊരിച്ചെടുത്ത കിടിലൻ കുരുമുളകുള്ള ചെറുമുരുക്ക്.(A crunchy and mildly spiced fried snack made from rice and gram flour.)",
+      description: "തക്കാളിയുടെ സ്വാദും കുരുമുളകിന്റെ മസാലയും ചേർന്ന ക്രിസ്‌പി നാസ്തയാണ് തക്കാളിമുറുക്ക്..(A crunchy and mildly spiced fried snack made from rice and gram flour.)",
       category: "Popular",
       image: img3,
     },
     {
-      name: "മുരുക്ക്(Murukku)",
+      name: "മുറുക്ക്(Murukku)",
       price: "$7.99",
       description: "ക്രിസ്പിയും രുചികരവുമായ അരിമാവിൽ തയ്യാറാക്കുന്ന ദക്ഷിണേന്ത്യൻ നാടൻ സ്നാക്ക്.(A crispy and tasty South Indian snack made from rice flour and spices.)",
       category: "Premium",
@@ -52,6 +55,29 @@ const Products = () => {
       description: "പച്ച ചക്ക നേർത്ത് അരിഞ്ഞ് വറുത്ത കേരളത്തിന്റെ പരമ്പരാഗത ചിപ്സ്.(Crispy chips made from thinly sliced raw jackfruit—a traditional Kerala snack.)",
     
       image: img6,
+    },
+    {
+      name: "കപ്പ സ്റ്റിക്സ് (Kappa Sticks)",
+      price: "$5.99",
+      description: "ചെറുതായി മുറിച്ച കപ്പ കഷണങ്ങൾ എണ്ണയിൽ വറുത്ത് ഉപ്പും മസാലയും ചേർത്തുണ്ടാക്കുന്ന കുരുമുളകുള്ള ക്രിസ്‌പി നാസ്ത..(thinly sliced tapioca pieces deep-fried and mixed with salt and mild spices, a crispy and tasty snack.)",
+    
+      image: img7,
+    },
+
+    {
+      name: "കപ്പ ചിപ്സ് (Chakka chips)",
+      price: "$5.99",
+      description: "നേർത്തതായി മുറിച്ച കപ്പ കഷണങ്ങൾ എണ്ണയിൽ വറുത്ത് ഉപ്പു ചേർത്തുണ്ടാക്കുന്ന കുരുമുളകുള്ള രുചിയുള്ള നാസ്ത.(thinly sliced tapioca pieces deep-fried until crisp and lightly salted, a crunchy and delicious traditional snack.)",
+    
+      image: img8,
+    },
+
+     {
+      name: "കായവറുത്തത് (Chakka chips)",
+      price: "$5.99",
+      description: "നേർത്തയായി മുറിച്ച വാഴക്ക കഷണങ്ങൾ തേങ്ങാവെള്ളയിൽ വറുത്ത് ഉപ്പു ചേർത്തുണ്ടാക്കുന്ന പരമ്പരാഗത കുരുമുളകുള്ള നാസ്ത.(thinly sliced raw banana pieces fried in coconut oil and salted, a traditional crispy South Indian snack.)",
+    
+      image: img9,
     },
   ];
 
