@@ -116,10 +116,7 @@ const Products = () => {
                         {product.category}
                       </span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-                    <p className="text-muted-foreground mb-4 text-sm">
-                      {product.description}
-                    </p>
+                    <h3 className="text-xl font-semibold mb-4">{product.name}</h3>
                     <Button className="w-full group-hover:bg-primary/90" asChild>
                       <Link to="/contact">Contact to Order</Link>
                     </Button>
