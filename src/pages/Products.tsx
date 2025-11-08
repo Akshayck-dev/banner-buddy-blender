@@ -22,14 +22,14 @@ const Products = () => {
       image: img1,
     },
     {
-      name: "റിബൺ പക്കവട(Ribbon Pakoda)",
+      name: "ഓലവട (olavada)",
       price: "$6.99",
       description: "അരിമാവും കടലമാവും ചേർത്ത് പൊരിച്ചെടുത്ത കിടിലൻ ക്രിസ്പി റിബൺ പക്കവട.(A crispy and ribbon-shaped South Indian snack made from rice and gram flour.)",
       category: "New",
       image: img2,
     },
     {
-      name: "തക്കാളിമുറുക്ക്(Cheeru Murukku)",
+      name: "തക്കാളി മുറുക്ക് (tomato murukku)",
       price: "$5.49",
       description: "തക്കാളിയുടെ സ്വാദും കുരുമുളകിന്റെ മസാലയും ചേർന്ന ക്രിസ്‌പി നാസ്തയാണ് തക്കാളിമുറുക്ക്..(A crunchy and mildly spiced fried snack made from rice and gram flour.)",
       category: "Popular",
@@ -50,14 +50,14 @@ const Products = () => {
       image: img5,
     },
     {
-      name: "ചക്ക വറുത്തത് (Chakka chips)",
+      name: "ചക്ക വറുത്തത് (jackfruit chips)",
       price: "$5.99",
       description: "പച്ച ചക്ക നേർത്ത് അരിഞ്ഞ് വറുത്ത കേരളത്തിന്റെ പരമ്പരാഗത ചിപ്സ്.(Crispy chips made from thinly sliced raw jackfruit—a traditional Kerala snack.)",
     
       image: img6,
     },
     {
-      name: "കപ്പ സ്റ്റിക്സ് (Kappa Sticks)",
+      name: "കപ്പ വറുത്തത് (tapioca stick)",
       price: "$5.99",
       description: "ചെറുതായി മുറിച്ച കപ്പ കഷണങ്ങൾ എണ്ണയിൽ വറുത്ത് ഉപ്പും മസാലയും ചേർത്തുണ്ടാക്കുന്ന കുരുമുളകുള്ള ക്രിസ്‌പി നാസ്ത..(thinly sliced tapioca pieces deep-fried and mixed with salt and mild spices, a crispy and tasty snack.)",
     
@@ -65,7 +65,7 @@ const Products = () => {
     },
 
     {
-      name: "കപ്പ ചിപ്സ് (Chakka chips)",
+      name: "കപ്പ വറുത്തത് (tapioca chips)",
       price: "$5.99",
       description: "നേർത്തതായി മുറിച്ച കപ്പ കഷണങ്ങൾ എണ്ണയിൽ വറുത്ത് ഉപ്പു ചേർത്തുണ്ടാക്കുന്ന കുരുമുളകുള്ള രുചിയുള്ള നാസ്ത.(thinly sliced tapioca pieces deep-fried until crisp and lightly salted, a crunchy and delicious traditional snack.)",
     
@@ -73,7 +73,7 @@ const Products = () => {
     },
 
      {
-      name: "കായവറുത്തത് (Chakka chips)",
+      name: "കായ വറുത്തത് (banana chips)",
       price: "$5.99",
       description: "നേർത്തയായി മുറിച്ച വാഴക്ക കഷണങ്ങൾ തേങ്ങാവെള്ളയിൽ വറുത്ത് ഉപ്പു ചേർത്തുണ്ടാക്കുന്ന പരമ്പരാഗത കുരുമുളകുള്ള നാസ്ത.(thinly sliced raw banana pieces fried in coconut oil and salted, a traditional crispy South Indian snack.)",
     
